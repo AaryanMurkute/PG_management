@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PG Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="PG Management Logo">
+      <h1>PG Dashboard</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#manage">Manage PG</a></li>
+        <li><a href="#payments">Payments</a></li>
+        <li><a href="#settings">Settings</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="overview">
+    <h2>Overview</h2>
+    <div class="stats">
+      <div class="stat">
+        <h3>Total PGs</h3>
+        <p>10</p>
+      </div>
+      <div class="stat">
+        <h3>Occupancy Rate</h3>
+        <p>80%</p>
+      </div>
+      <div class="stat">
+        <h3>Total Revenue</h3>
+        <p>$5000</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="manage">
+    <h2>Manage PG</h2>
+    <div class="pg-list">
+      <!-- PG List will be populated dynamically using JavaScript -->
+    </div>
+  </section>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

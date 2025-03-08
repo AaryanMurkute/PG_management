@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PG Management System</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="WhatsApp Image 2025-03-05 at 20.38.08_cb7dc9a6.jpg" alt="PG Management Logo">
+      <h1>EAZY-PG</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+      </ul>
+    </nav>
+    <div class="auth-buttons">
+      <button onclick="openLogin()">Login</button>
+      <button onclick="openSignup()">Signup</button>
+    </div>
+  </header>
+
+  <section id="home">
+    <div class="hero">
+      <h2>Find Your Perfect PG</h2>
+      <p>Explore the best PG accommodations near you.</p>
+      <button onclick="explore()">Explore Now</button>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We provide the best PG management system to help you find and manage PG accommodations easily.</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services-container">
+      <div class="service">
+        <i class="fas fa-home"></i>
+        <h3>PG Search</h3>
+        <p>Find the best PG accommodations near you.</p>
+      </div>
+      <div class="service">
+        <i class="fas fa-users"></i>
+        <h3>Roommate Finder</h3>
+        <p>Connect with potential roommates.</p>
+      </div>
+      <div class="service">
+        <i class="fas fa-wallet"></i>
+        <h3>Easy Payments</h3>
+        <p>Manage your PG payments online.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 PG Management System. All rights reserved.</p>
+  </footer>
+
+  <!-- Login Modal -->
+  <div id="login-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeLogin()">&times;</span>
+      <h2>Login</h2>
+      <form id="login-form">
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Signup Modal -->
+  <div id="signup-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeSignup()">&times;</span>
+      <h2>Signup</h2>
+      <form id="signup-form">
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Signup</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
